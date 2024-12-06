@@ -1,11 +1,6 @@
-const Myelement = <h1>This is Element</h1>
-
-const Youtube = () => {
+function Youtube() {
     return (
-        <>
-            <h1>Youtube</h1>
-            {Myelement}
-        </>
+        <h1>Hey This is Youtube</h1>
     )
 }
 
