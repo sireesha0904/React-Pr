@@ -1,7 +1,6 @@
-function Youtube() {
+function MyButton() {
     return (
-        <h1>Hey This is Youtube</h1>
+        <button>Click</button>
     )
 }
-
-export default Youtube
+export default MyButton;
