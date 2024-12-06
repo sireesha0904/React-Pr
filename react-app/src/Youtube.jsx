@@ -1,9 +1,12 @@
-function Youtube() {
+const Myelement = <h1>This is Element</h1>
+
+const Youtube = () => {
     return (
-        <h1>Hey This is Youtube</h1>
+        <>
+            <h1>Youtube</h1>
+            {Myelement}
+        </>
     )
 }
-const myelement = <h1>Hello {5 + 5}</h1>
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(myelement);
+
 export default Youtube
