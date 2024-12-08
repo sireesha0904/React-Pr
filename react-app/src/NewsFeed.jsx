@@ -4,9 +4,8 @@ function NewsFeed() {
   const [news, setNews] = useState([]);
   const [refresh, setRefresh] = useState(false);
 
-  // Fetch news on mount or refresh
   useEffect(() => {
-    const apiKey = "9c9542e9ac1643ddb7662b803dcdf64e"; // Replace with your actual NewsAPI key
+    const apiKey = "9c9542e9ac1643ddb7662b803dcdf64e"; 
     const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
 
     fetch(url)
@@ -14,11 +13,10 @@ function NewsFeed() {
       .then((data) => setNews(data.articles))
       .catch((error) => console.error("Error fetching data:", error));
 
-    // Cleanup
     return () => {
       console.log("NewsFeed Unmounted");
     };
-  }, [refresh]); // Refetch when refresh state changes
+  }, [refresh]); 
 
   return (
     <div>
