@@ -1,32 +1,34 @@
 import React, { useState, useEffect } from "react";
 
 function NewsFeed() {
-  const [news, setNews] = useState([]); // State to store news articles
-  const [refresh, setRefresh] = useState(false); // State to trigger news refresh
+  const [news, setNews] = useState([]);
+  const [refresh, setRefresh] = useState(false);
 
-  // Fetch news on mount and refresh
+  // Fetch news on mount or refresh
   useEffect(() => {
-    // API call to fetch news data
-    fetch("https://api.example.com/news")
-      .then((res) => res.json()) // Parse the response to JSON
-      .then((data) => setNews(data.articles)); // Update the state with fetched data
+    const apiKey = "9c9542e9ac1643ddb7662b803dcdf64e"; // Replace with your actual NewsAPI key
+    const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
 
-    // Cleanup function that runs when component is unmounted or before rerun
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setNews(data.articles))
+      .catch((error) => console.error("Error fetching data:", error));
+
+    // Cleanup
     return () => {
-      console.log("NewsFeed Unmounted"); // This logs when the component unmounts or refreshes
+      console.log("NewsFeed Unmounted");
     };
-  }, [refresh]); // Dependency array that triggers effect when 'refresh' changes
+  }, [refresh]); // Refetch when refresh state changes
 
   return (
     <div>
       <h1>Latest News</h1>
       <ul>
         {news.map((item, index) => (
-          <li key={index}>{item.title}</li> // Render each news article
+          <li key={index}>{item.title}</li>
         ))}
       </ul>
-      <button onClick={() => setRefresh(!refresh)}>Refresh News</button>{" "}
-      {/* Button to trigger refresh */}
+      <button onClick={() => setRefresh(!refresh)}>Refresh News</button>
     </div>
   );
 }
