@@ -1,8 +1,7 @@
 
-function Practice(){
-
-        return
-
+import React, { useState } from "react";
+function Greetings() {
+    
 }
 
-export default Practice;
+export default Greetings;
