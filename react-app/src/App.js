@@ -1,9 +1,9 @@
-import Greetings from "./Practice";
+import DataFetcher from "./DataFetcher";
 
 function App() {
   return (
     <div>
-      <Greetings></Greetings>
+      <DataFetcher></DataFetcher>
     </div>
   )
 }
