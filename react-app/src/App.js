@@ -1,9 +1,9 @@
-import NewsFeed from "./NewsFeed";
+import Greetings from "./Practice";
 
 function App() {
   return (
     <div>
-      <NewsFeed/>
+      <Greetings></Greetings>
     </div>
   )
 }
