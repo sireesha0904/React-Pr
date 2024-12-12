@@ -3,7 +3,7 @@ import DataFetcher from "./DataFetcher";
 function App() {
   return (
     <div>
-      <DataFetcher></DataFetcher>
+      {/* <DataFetcher></DataFetcher> */}
     </div>
   )
 }
