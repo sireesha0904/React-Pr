@@ -10,9 +10,8 @@ function Child1() {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           placeholder="Enter a Value"
-        >
-          <p>Value in Child 1: {value}</p>
-        </input>
+        />
+        <p>Value in Child 2: {value}</p>
       </div>
     );
 }

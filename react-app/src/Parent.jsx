@@ -3,11 +3,11 @@ import Child2 from "./Child2";
 
 function Parent() {
     return (
-        <div>
-            <h1>Hello, This is Parent Component</h1>
-            <Child1></Child1>
-            <Child2></Child2>
-        </div>
+      <div>
+        <h1>Hello, This is Parent Component</h1>
+        <Child1 />
+        <Child2 />
+      </div>
     );
 }
 
