@@ -1,9 +1,9 @@
-import DataFetcher from "./DataFetcher";
+import Parent from "./Parent";
 
 function App() {
   return (
     <div>
-      <DataFetcher></DataFetcher>
+      <Parent></Parent>
     </div>
   )
 }
