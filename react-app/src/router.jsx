@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Routes, Route, Link, BrowserRouter, } from "react-router-dom";
+import {
+  BrowserRouter as Routes,
+  Route,
+  Link,
+  BrowserRouter,
+} from "react-router-dom";
+
 import Home from "./home";
 import About from "./about";
 
@@ -10,8 +16,8 @@ function RouterPr() {
           <Link to="/">home</Link> | <Link to="/about">About</Link>
         </nav>
         <Routes>
-          <Route exact path="/" Component={Home} />
-          <Route exact path="/about" Component={About} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     );
