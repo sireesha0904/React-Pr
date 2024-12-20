@@ -4,6 +4,7 @@ import RouterPr from "./routpr";
 function App() {
   return (
     <div>
+      <Parent />
       <RouterPr />
       
     </div>
