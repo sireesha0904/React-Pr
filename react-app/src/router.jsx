@@ -3,7 +3,7 @@ import { BrowserRouter as Routes, Route, Link, BrowserRouter, } from "react-rout
 import Home from "./home";
 import About from "./about";
 
-function Router() {
+function RouterPr() {
     return (
       <BrowserRouter>
         <nav>
@@ -16,4 +16,4 @@ function Router() {
       </BrowserRouter>
     );
 }
-export default Router;
+export default RouterPr;

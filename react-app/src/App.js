@@ -1,11 +1,11 @@
 import React from "react";
 import Parent from "./Parent";
-import router from "./router";
+import RouterPr from "./router";
 function App() {
   return (
     <div>
       <Parent />
-      <router/>
+      <RouterPr />
     </div>
   );
 }
