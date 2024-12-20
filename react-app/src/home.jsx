@@ -5,4 +5,5 @@ import React from "react";
              <h1>Hello welcome to Home Page!</h1>
         </div>
     )
-}
+ }
+export default Home;
