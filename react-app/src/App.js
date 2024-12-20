@@ -1,5 +1,4 @@
 import Parent from "./Parent";
-
 function App() {
   return (
     <div>
