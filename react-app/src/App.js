@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <RouterPr />
-    <Parent />
+    
     </div>
   );
 }
