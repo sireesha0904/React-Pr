@@ -1,7 +1,11 @@
 body{
-    background-color: #bdbdbd;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    border: 5px solid #c9202093;
+    border: 1px solid #c9202093;
+}
+.heading{
+    color: #c92020;
+    text-align: center;
 }
