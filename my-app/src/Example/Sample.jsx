@@ -19,7 +19,7 @@ const Simple2 = () => {
 function Sample() {
   return (
     <div>
-      This the main component. in This we added thpse two components.
+      This the main component. in This we added those two components.
       <Simple />
       <Simple2 />
     </div>
