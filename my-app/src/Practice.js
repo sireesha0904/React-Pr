@@ -15,9 +15,7 @@ function Practice() {
             You are doing great! Keep exploring React and building amazing apps.
         </p>
 
-            <img src='https://th.bing.com/th/id/R.ac54341504588eedd651ff867f1ef949?rik=JYmQaMVSULpYQg&riu=http%3a%2f%2fthewowstyle.
-            com%2fwp-content%2fuploads%2f2015%2f01%2fnature-images.jpg&ehk=BNPsuSOUR7ATZ3EpRwxx1xFl7LUbO3tYlu1wFLCBrCE%3d&risl=&pid=ImgRaw&r=0'
-            alt='Nature' className='image' />
+            <img src='./nature.jpeg'alt='Nature' className='image' />
         </section>
     );
 }
