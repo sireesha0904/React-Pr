@@ -6,6 +6,7 @@ import './App.css';
 import SecondCompo from './PropsContainer/SecondCompo';
 import ThirdCompo from './PropsContainer/ThirdCompo';
 import FourthCompo from './PropsContainer/FourthCompo';
+import StateMgm from './StateMgm';
 
 const CarObject ={
   name: "BMW",
@@ -18,16 +19,15 @@ function App() {
     <div>
       <Comp />
       <Sample />
-      <h1 className='heading'>Hello This is Sample Css Styles</h1>
+      <h1 className="heading">Hello This is Sample Css Styles</h1>
       <hr></hr>
       <Practice />
       <hr></hr> <hr></hr>
-      <FirstCompo car = {CarObject} />
-      <SecondCompo  name="SecondComponent"/>
-      <ThirdCompo name = "ThirdComponent"/>
-      <FourthCompo name = "FourthComponent" />
-
-
+      <FirstCompo car={CarObject} />
+      <SecondCompo name="SecondComponent" />
+      <ThirdCompo name="ThirdComponent" />
+      <FourthCompo name="FourthComponent" />
+      <StateMgm />
     </div>
   );
 }
