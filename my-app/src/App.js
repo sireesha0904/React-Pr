@@ -7,6 +7,12 @@ import SecondCompo from './PropsContainer/SecondCompo';
 import ThirdCompo from './PropsContainer/ThirdCompo';
 import FourthCompo from './PropsContainer/FourthCompo';
 
+const CarObject ={
+  name: "BMW",
+  model: "X5",
+  year: 2020,
+  color: "Black"
+}
 function App() {
   return (
     <div>
@@ -16,7 +22,7 @@ function App() {
       <hr></hr>
       <Practice />
       <hr></hr> <hr></hr>
-      <FirstCompo name="FirstComponent" />
+      <FirstCompo car = {CarObject} />
       <SecondCompo  name="SecondComponent"/>
       <ThirdCompo name = "ThirdComponent"/>
       <FourthCompo name = "FourthComponent" />
