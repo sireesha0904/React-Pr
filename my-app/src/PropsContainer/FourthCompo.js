@@ -1,9 +1,9 @@
 import React from 'react'
 
-function FourthCompo() {
+function FourthCompo(props) {
   return (
     <div>
-      
+      Hello This is {props.name}
     </div>
   )
 }

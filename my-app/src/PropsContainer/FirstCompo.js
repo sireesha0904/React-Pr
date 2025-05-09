@@ -1,8 +1,8 @@
 import React from 'react'
 
-function FirstCompo() {
+function FirstCompo(props) {
   return (
-    <div>FirstCompo</div>
+    <div>Hello This is {props.name}</div>
   )
 }
 

@@ -1,8 +1,10 @@
 import React from 'react'
 
-function SecondCompo() {
+function SecondCompo(props) {
   return (
-    <div>SecondCompo</div>
+      <div>
+          Hello This is {props.name}
+    </div>
   )
 }
 
