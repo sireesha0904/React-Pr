@@ -5,7 +5,8 @@ const StateMgm = () => {
     const [city, setCity] = useState("Paralakhemundi");
   return (
     <div>
-      
+          <p>Current City is : {city}</p>
+          <button onClick={ () => setCity("Uppalada")}>Change City</button>
     </div>
   )
 }
