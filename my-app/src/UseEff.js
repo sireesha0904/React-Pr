@@ -9,7 +9,7 @@ function UseEff() {
   }, [count]);
   return (
     <div>
-      <h1> Hello Sireesha </h1>
+      <h1> Increaser the count </h1>
       <p>Count is {count}</p>
       <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>

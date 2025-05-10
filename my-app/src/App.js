@@ -25,6 +25,7 @@ function App() {
       <StateMgm />
       <hr></hr>
       <UseEff />
+      <hr></hr>
     </div>
   );
 }
