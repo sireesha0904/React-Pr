@@ -1,14 +1,19 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-const UseEff = () => {
-    const [city, setCity] = useState("Parlakhemundi");
-    
-    if()
+import React from "react";
+import { useState, useEffect } from "react";
+
+function UseEff() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log(`Count is ${count}`);
+  }, [count]);
   return (
     <div>
-      <p>Hello, I am from {city}</p>
+      <h1> Hello Sireesha </h1>
+      <p>Count is {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>
-  )
+  );
 }
 
-export default UseEff
+export default UseEff;
