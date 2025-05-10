@@ -6,6 +6,7 @@ import SecondCompo from './PropsContainer/SecondCompo';
 import ThirdCompo from './PropsContainer/ThirdCompo';
 import FourthCompo from './PropsContainer/FourthCompo';
 import StateMgm from './StateMgm';
+import UseEff from './UseEff';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <hr></hr>
       <StateMgm />
       <hr></hr>
+      <UseEff />
     </div>
   );
 }
