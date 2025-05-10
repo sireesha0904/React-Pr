@@ -1,12 +1,12 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 const StateMgm = () => {
-    const [city, setCity] = useState("Paralakhemundi");
+  const [city, setCity] = useState("Parlakhemundi");
+  setCity("Bhubaneswar");
   return (
     <div>
-          <p>Current City is : {city}</p>
-          <button onClick={ () => setCity("Uppalada")}>Change City</button>
+      <p>Hello i am From {city}</p>
+      <button onClick={() => setCity("Bhubaneswar")}>Change City</button>
     </div>
   )
 }
