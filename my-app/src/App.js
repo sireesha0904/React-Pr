@@ -7,7 +7,7 @@ import ThirdCompo from './PropsContainer/ThirdCompo';
 import FourthCompo from './PropsContainer/FourthCompo';
 import StateMgm from './StateMgm';
 import UseEff from './UseEff';
-
+import Events from './Events';
 function App() {
   return (
     <div>
@@ -17,7 +17,6 @@ function App() {
       <hr></hr>
       <Practice />
       <hr></hr> <hr></hr>
-      
       <SecondCompo name="SecondComponent" />
       <ThirdCompo name="ThirdComponent" />
       <FourthCompo name="FourthComponent" />
@@ -26,6 +25,7 @@ function App() {
       <hr></hr>
       <UseEff />
       <hr></hr>
+      <Events />
     </div>
   );
 }
