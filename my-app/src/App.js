@@ -20,7 +20,9 @@ function App() {
       <SecondCompo name="SecondComponent" />
       <ThirdCompo name="ThirdComponent" />
       <FourthCompo name="FourthComponent" />
+      <hr></hr>
       <StateMgm />
+      <hr></hr>
     </div>
   );
 }
