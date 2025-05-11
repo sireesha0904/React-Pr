@@ -9,6 +9,7 @@ import StateMgm from './StateMgm';
 import UseEff from './UseEff';
 import Events from './Events';
 import EventListeners from './EventListeners';
+import InputBox from './InputBox';
 function App() {
   return (
     <div>
@@ -28,7 +29,8 @@ function App() {
       <hr></hr>
       <Events />
       <hr></hr>
-      <EventListeners/>
+      <EventListeners />
+    <InputBox />
     </div>
   );
 }
