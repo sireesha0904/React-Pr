@@ -10,6 +10,7 @@ import UseEff from './UseEff';
 import Events from './Events';
 import EventListeners from './EventListeners';
 import InputBox from './InputBox';
+import FormExample from './FormExample';
 function App() {
   return (
     <div>
@@ -30,7 +31,10 @@ function App() {
       <Events />
       <hr></hr>
       <EventListeners />
-    <InputBox />
+      <InputBox />
+      <hr></hr>
+      <FormExample />
+      <hr></hr>
     </div>
   );
 }
