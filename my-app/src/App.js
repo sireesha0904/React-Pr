@@ -8,6 +8,7 @@ import FourthCompo from './PropsContainer/FourthCompo';
 import StateMgm from './StateMgm';
 import UseEff from './UseEff';
 import Events from './Events';
+import EventListeners from './EventListeners';
 function App() {
   return (
     <div>
@@ -26,6 +27,8 @@ function App() {
       <UseEff />
       <hr></hr>
       <Events />
+      <hr></hr>
+      <EventListeners/>
     </div>
   );
 }
