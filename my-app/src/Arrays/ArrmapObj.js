@@ -1,48 +1,22 @@
-import React from 'react'
-let student = [
-  {
-    name: "Sireesha",
-    age: 21,
-    branch: "CSE",
-    city: "Parlakhemundi",
-    country: "India",
-  },
-];
-function ArrmapObj() {
-  
-  return (
-    <div>
-          <p>{ student.nameimport React from 'react'
-
-let students = [
-  {
-    name: "Sireesha",
-    age: 21,
-    branch: "CSE",
-    city: "Parlakhemundi",
-    country: "India",
-  },
-];
+import React, { useState } from "react";
 
 function ArrmapObj() {
+  const [tasks, setTasks] = useState(["Task 1", "Task 2"]);
+
+  const addTask = () => {
+    setTasks([...tasks, `Task ${tasks.length + 1}`]);
+  };
+
   return (
-    <div>
-      {students.map((student, index) => (
-        <div key={index}>
-          <p>{student.name}</p>
-          <p>Age: {student.age}</p>
-          <p>Branch: {student.branch}</p>
-          <p>City: {student.city}</p>
-          <p>Country: {student.country}</p>
-        </div>
-      ))}
-    </div>
-  )
+    <>
+      <ul>
+        {tasks.map((task, i) => (
+          <li key={i}>{task}</li>
+        ))}
+      </ul>
+      <button onClick={addTask}>Add Task</button>
+    </>
+  );
 }
 
-export default ArrmapObj}</p>
-    </div>
-  )
-}
-
-export default ArrmapObj
+export default ArrmapObj;
