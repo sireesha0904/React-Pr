@@ -6,9 +6,10 @@ const Array = () => {
     <div>
       <h1>Array</h1>
           <h2>Array is a data structure that can store multiple values in a single variable.</h2>
-          <p> Hello {arr[0]}, i am { arr[1]} yrs Old.</p>
+          <p> Hello {arr[0]}, i am {arr[1]} yrs Old.</p>
+          <p> I am from {arr[3].city}, { arr[3].state}</p>
     </div>
   )
 }
 
-export default Array
+export default Array;

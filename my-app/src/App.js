@@ -11,7 +11,8 @@ import Events from './Events';
 import EventListeners from './EventListeners';
 import InputBox from './InputBox';
 import FormExample from './FormExample';
-import Array from './Array';
+import Array from './Arrays/Array';
+import ArrmapObj from './Arrays/ArrmapObj';
 function App() {
   return (
     <div>
@@ -37,6 +38,8 @@ function App() {
       <FormExample />
       <hr></hr>
       <Array />
+      <hr></hr>
+      <ArrmapObj />
       <hr></hr>
     </div>
   );
