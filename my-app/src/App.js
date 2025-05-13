@@ -11,6 +11,7 @@ import Events from './Events';
 import EventListeners from './EventListeners';
 import InputBox from './InputBox';
 import FormExample from './FormExample';
+import Array from './Array';
 function App() {
   return (
     <div>
@@ -34,6 +35,8 @@ function App() {
       <InputBox />
       <hr></hr>
       <FormExample />
+      <hr></hr>
+      <Array />
       <hr></hr>
     </div>
   );
