@@ -13,6 +13,8 @@ import InputBox from './InputBox';
 import FormExample from './FormExample';
 import Array from './Arrays/Array';
 import ArrmapObj from './Arrays/ArrmapObj';
+import Users from './FetchAPI/Users'; 
+
 function App() {
   return (
     <div>
@@ -41,6 +43,8 @@ function App() {
       <hr></hr>
       <ArrmapObj />
       <hr></hr>
+      <Users />
+      
     </div>
   );
 }
