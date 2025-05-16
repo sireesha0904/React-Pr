@@ -1,16 +1,18 @@
-import React from 'react'
-import useState from 'react'
+import React, { useState } from "react";
+
 const Circuit = () => {
-
-    const [login, setlogin] = useState(true);
-
+  const [login, setLogin] = useState(true);
 
   return (
     <div>
-          {login
-           && <h1>Welcome to Circuit</h1>}
-    </div>
-  )
-}
+      {login && <h1>Welcome to Circuit</h1>}
+      {!login && <h1>Please Login</h1>}
 
-export default Circuit
+      <button onClick={() => setLogin(!login)}>
+        {login ? "Logout" : "Login"}
+      </button>
+    </div>
+  );
+};
+
+export default Circuit;

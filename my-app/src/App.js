@@ -14,7 +14,7 @@ import FormExample from './FormExample';
 import Array from './Arrays/Array';
 import ArrmapObj from './Arrays/ArrmapObj';
 import Users from './FetchAPI/Users'; 
-
+import Circuit from './Circuit';
 function App() {
   return (
     <div>
@@ -44,7 +44,9 @@ function App() {
       <ArrmapObj />
       <hr></hr>
       <Users />
-      
+      <hr></hr>
+
+      <Circuit/>
     </div>
   );
 }
