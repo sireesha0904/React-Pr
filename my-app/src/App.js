@@ -15,6 +15,7 @@ import Array from './Arrays/Array';
 import ArrmapObj from './Arrays/ArrmapObj';
 import Users from './FetchAPI/Users'; 
 import Circuit from './Circuit';
+import SpreadOper from './SpreadOper';
 function App() {
   return (
     <div>
@@ -45,8 +46,10 @@ function App() {
       <hr></hr>
       <Users />
       <hr></hr>
-
-      <Circuit/>
+      <Circuit />
+      <hr></hr>
+      <SpreadOper />
+      
     </div>
   );
 }
