@@ -16,6 +16,7 @@ import ArrmapObj from './Arrays/ArrmapObj';
 import Users from './FetchAPI/Users'; 
 import Circuit from './Circuit';
 import SpreadOper from './SpreadOper';
+import MultiState from './MultiState';
 function App() {
   return (
     <div>
@@ -49,7 +50,8 @@ function App() {
       <Circuit />
       <hr></hr>
       <SpreadOper />
-      
+      <hr></hr>
+      <MultiState />
     </div>
   );
 }
